@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Kumbh Sans', sans-serif;
+        user-select:none;
+    }
+    body {
+      position:relative;
+      background-image:url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+      background-size:contain, contain;
+      background-repeat:no-repeat, no-repeat;
+      background-size:60vw, 60vw;
+      background-position:top -300px left -175px, bottom -300px right -175px;
+      background-color:hsl(185, 75%, 39%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+    }
+    .all-wrap {
+      border-radius:10px;
+      box-shadow:5px 5px 50px hsl(185, 75%, 39%);
+      width:350px;
+      height:max-content;
+      background-color:white;
+      
+    }
+    .cred-wrap .profile-img {
+      border-radius:52.5px;
+      border:5px solid #fff;
+    }
+    .bg {
+      height:150px;
+      background:url('images/bg-pattern-card.svg') no-repeat;
+      background-size:cover;
+      position:relative;
+      border-radius:10px 10px 0 0;
+    }
+    .profile-num {
+        margin:-20px 0 30px 0;
+      display:flex;
+      justify-content:space-around;
+    }
+    .cred-wrap {
+      text-align:center;
+      display:grid;
+      grid-template-rows:auto auto;
+      position:relative;
+      top:-50px;
+      text-align:center;
+      padding-bottom:30px;
+      border-bottom:1px solid rgba(0,0,0,0.3);
+    }
+    .cred-wrap .profile-img {
+      transform:translate(-55px);
+      width:110px;
+      margin-left:50%;
+    }
+    .profile-cred span {
+      font-size:18px;
+    }
+    .profile-cred p:first-child {
+        margin:20px 0 12.5px 0;
+    }
+    .dark {
+      font-weight:700;
+      color:hsl(229, 23%, 23%);
+    }
+    .light {
+      color:hsl(227, 10%, 46%);
+    }
+    .num-head {
+      text-align:center;
+    }
+    .profile-num .light{
+      font-size:10px;
+      font-weight:700;
+      margin-top:7.5px;
+    }
+
+    @media(max-width:1050px) {
+      body {
+        background-size:70vw, 70vw;
+      }
+    }
+    @media(max-width:700px) {
+      body {
+        background-size:110vw, 110vw;
+      }
+      div.all-wrap {
+        max-width:100vw;
+      }
+    }
